@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.component';
 import Header from '../../components/Header/Header.component';
 
@@ -15,16 +16,18 @@ const UserDataFormPage = () => (
 
         <label for="sobrenome">Sobrenome</label>
         <input type="text" name="sobrenome" />
-        
+
         <label for="cpf">CPF</label>
         <input type="text" name="cpf" />
-        
+
         <label for="data-nascimento">Data de nascimento</label>
         <input type="text" name="data-nascimento" />
-        
+
         <label for="telefone">Telefone</label>
         <input type="text" name="telefone" />
-        
+
+        <Link to="/">Voltar</Link>
+        <Link to="/Checkout">Continuar</Link>
       </form>
     </main>
   </>
