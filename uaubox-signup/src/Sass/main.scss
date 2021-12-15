@@ -1,4 +1,4 @@
-$primary-color: #FF3333;
-$secondary-color: #646464;
-$background-primary: #E5E5E5;
-$background-secondary: #E3E3E3;
+@import "./utils/variables";
+
+@import "./layout/header";
+@import "./layout/main";
