@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.component';
-import Button from "../../components/Button/Button.component";
-import Header from '../../components/Header/Header.component';
+import Breadcrumb from '../components/Breadcrumb.component';
+import Button from "../components/Button.component";
+import Header from '../components/Header.component';
 
 const UserDataFormPage = () => (
   <>
     <Header>
       <Breadcrumb />
     </Header>
-    <main>
+    <main className="main">
       <div className="title">
         <h1 className='h1'>Você está quase lá!</h1>
       </div>
@@ -42,16 +42,15 @@ const UserDataFormPage = () => (
             <input className="form__input" type="text" name="telefone" />
           </div>
         </div>
-
-        <div className="form__buttons">
-          <Link to="/">
-            <Button className="btn btn--secondary">Voltar</Button>
-          </Link>
-          <Link to="/checkout">
-            <Button className="btn btn--primary">Continuar</Button>
-          </Link>
-        </div>
       </form>
+      <div className="form__buttons">
+        <Link className="link" to="/">
+          <Button className="btn btn--secondary">Voltar</Button>
+        </Link>
+        <Link className="link" to="/checkout">
+          <Button className="btn btn--primary">Continuar</Button>
+        </Link>
+      </div>
     </main>
   </>
 )

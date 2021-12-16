@@ -1,0 +1,19 @@
+.checkout {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__subscription {
+    color: $primary-color;
+    display: flex;
+  }
+
+  &__buttons {
+    display: flex;
+
+    .btn {
+      width: 50%;
+    }
+  }
+}

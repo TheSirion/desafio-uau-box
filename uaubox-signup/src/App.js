@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import CheckoutPage from "./pages/CheckoutPage/CheckoutPage.component";
-import UserDataFormPage from "./pages/UserDataFormPage/UserDataFormPage.component";
+import CheckoutPage from "./pages/CheckoutPage.component";
+import UserDataFormPage from "./pages/UserDataFormPage.component";
 import "./Sass/main.scss";
 
 function App() {
