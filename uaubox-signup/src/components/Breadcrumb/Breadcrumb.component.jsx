@@ -1,5 +1,4 @@
 import React from 'react';
-import './Breadcrumb.style.scss';
 
 const Breadcrumb = () => (
   <div className='breadcrumb'>

@@ -10,21 +10,21 @@ const UserDataFormPage = () => (
       <Breadcrumb />
     </Header>
     <main>
-      <h1>Você está quase lá!</h1>
+      <h1 className='h1'>Você está quase lá!</h1>
       <form>
-        <label for="nome">Nome</label>
+        <label htmlFor="nome">Nome</label>
         <input type="text" name="nome" />
 
-        <label for="sobrenome">Sobrenome</label>
+        <label htmlFor="sobrenome">Sobrenome</label>
         <input type="text" name="sobrenome" />
 
-        <label for="cpf">CPF</label>
+        <label htmlFor="cpf">CPF</label>
         <input type="text" name="cpf" />
 
-        <label for="data-nascimento">Data de nascimento</label>
+        <label htmlFor="data-nascimento">Data de nascimento</label>
         <input type="text" name="data-nascimento" />
 
-        <label for="telefone">Telefone</label>
+        <label htmlFor="telefone">Telefone</label>
         <input type="text" name="telefone" />
 
         <Link to="/"><Button>Voltar</Button></Link>

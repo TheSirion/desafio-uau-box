@@ -1,11 +1,14 @@
 import React from 'react';
 import Logo from '../../assets/Logo.svg';
-import './Header.style.scss';
 
 const Header = ({ children }) => (
   <header className='header'>
-    <img src={Logo} alt="UAUBox logo" />
-    {children}
+    <div className='header__logo'>
+      <img className='logo' src={Logo} alt='UAUBox logo' />
+    </div>
+    <div className='header__content'>
+      {children}
+    </div>
   </header>
 )
 
