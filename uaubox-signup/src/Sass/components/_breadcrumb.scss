@@ -1,4 +1,12 @@
 .breadcrumb {
   display: flex;
   justify-content: space-around;
+
+  &__step {
+    opacity: 0.6;
+
+    &--active {
+      opacity: 1;
+    }
+  }
 }

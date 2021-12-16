@@ -11,35 +11,35 @@ const UserDataFormPage = () => (
     </Header>
     <main className="main">
       <div className="title">
-        <h1 className='h1'>Você está quase lá!</h1>
+        <h1 className="h1">Você está quase lá!</h1>
       </div>
-      <form className='form'>
-        <div className="form__group">
-          <div className='form__input-wrapper'>
-            <label className="form__input-label" htmlFor="nome">Nome</label>
-            <input className="form__input" type="text" name="nome" />
+      <form className="form">
+        <div className="row form-group">
+          <div className="col">
+            <label className="form-label">Nome</label>
+            <input type="text" className="form-control form-control-lg" aria-label="Nome" />
           </div>
-          <div className='form__input-wrapper'>
-            <label className="form__input-label" htmlFor="sobrenome">Sobrenome</label>
-            <input className="form__input" type="text" name="sobrenome" />
-          </div>
-        </div>
-
-        <div className="form__group">
-          <div className='form__input-wrapper'>
-            <label className="form__input-label" htmlFor="cpf">CPF</label>
-            <input className="form__input" type="text" name="cpf" />
-          </div>
-          <div className='form__input-wrapper'>
-            <label className="form__input-label" htmlFor="data-nascimento">Data de nascimento</label>
-            <input className="form__input" type="text" name="data-nascimento" />
+          <div className="col">
+            <label className="form-label">Sobrenome</label>
+            <input type="text" className="form-control form-control-lg" aria-label="Sobrenome" />
           </div>
         </div>
 
-        <div className="form__group">
-          <div className='form__input-wrapper'>
-            <label className="form__input-label" htmlFor="telefone">Telefone</label>
-            <input className="form__input" type="text" name="telefone" />
+        <div className="row form-group">
+          <div className="col">
+            <label className="form-label">CPF</label>
+            <input type="text" className="form-control form-control-lg" aria-label="CPF" />
+          </div>
+          <div className="col">
+            <label className="form-label">Data de nascimento</label>
+            <input type="date" className="form-control form-control-lg" aria-label="Data de nascimento" />
+          </div>
+        </div>
+
+        <div className="row form-group">
+          <div className="col">
+            <label className="form-label">Telefone</label>
+            <input type="tel" minLength={9} maxLength={11} pattern={/(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})/} className="form-control form-control-lg w-50" aria-label="Nome" />
           </div>
         </div>
       </form>
