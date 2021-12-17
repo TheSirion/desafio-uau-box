@@ -36,20 +36,27 @@ const UserDataFormPage = () => (
           </div>
         </div>
 
-        <div className="row form-group">
+        <div className="row form-group g-4">
           <div className="col">
             <label className="form-label">Telefone</label>
-            <input type="tel" minLength={9} maxLength={11} pattern={/(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})/} className="form-control form-control-lg w-50" aria-label="Nome" />
+            <input type="tel" minLength={9} maxLength={11} pattern={/(\(?\d{2}\)?\s)?(\d{4,5}-\d{4})/} className="form-control form-control-lg" aria-label="Telefone" />
           </div>
+          <div className="col"></div>
         </div>
       </form>
-      <div className="form__buttons">
-        <Link className="link" to="/">
-          <Button className="btn btn--secondary">Voltar</Button>
-        </Link>
-        <Link className="link" to="/checkout">
-          <Button className="btn btn--primary">Continuar</Button>
-        </Link>
+
+
+      <div className="form__buttons row">
+        <div className="col">
+          <Link className="link" to="/">
+            <Button className="btn btn--secondary">Voltar</Button>
+          </Link>
+        </div>
+        <div className="col">
+          <Link className="link" to="/checkout">
+            <Button className="btn btn--primary">Continuar</Button>
+          </Link>
+        </div>
       </div>
     </main>
   </>
