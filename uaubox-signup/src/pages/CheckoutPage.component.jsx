@@ -56,7 +56,7 @@ const CheckoutPage = () => (
           </div>
         </div>
         <div className="checkout__subscription-selection">
-          <select class="form-select" aria-label="Subscription selection">
+          <select className="form-select" aria-label="Subscription selection">
             <option value="mensal" selected>Assinatura mensal – R$89,90/mês</option>
             <option value="trimestral">Assinatura trimestral – R$79,90/mês</option>
             <option value="semestral">Assinatura semestral – R$74,90/mês</option>
