@@ -2,11 +2,14 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 6rem;
   }
 
   &__subscription {
     color: $primary-color;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__buttons {
@@ -15,5 +18,14 @@
     .btn {
       width: 50%;
     }
+  }
+
+  &__subscription-price {
+    height: 100%;
+  }
+
+  &__subscription-selection {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
   }
 }

@@ -16,7 +16,7 @@ const CheckoutPage = () => (
       </div>
       <div className="checkout__wrapper">
         <div className="form">
-          <div className="row form-group">
+          <div className="row form-group d-flex justify-content-center align-items-end">
             <div className="col">
               <label className="form-label">CEP</label>
               <input type="text" className="form-control" aria-label="CEP" />
@@ -47,13 +47,21 @@ const CheckoutPage = () => (
         </div>
 
         <div className="checkout__subscription">
-          <div className="checkout__subscription-price">
+          <div className="checkout__subscription-price d-flex flex-column justify-content-around">
             <h1 className="h1">Assinatura de R$89,90</h1>
             <h1 className="h1">Frete Grátis</h1>
           </div>
           <div className="checkout__subscription-box-img">
             <img src={Box} alt="Product box" />
           </div>
+        </div>
+        <div className="checkout__subscription-selection">
+          <select class="form-select" aria-label="Subscription selection">
+            <option value="mensal" selected>Assinatura mensal – R$89,90/mês</option>
+            <option value="trimestral">Assinatura trimestral – R$79,90/mês</option>
+            <option value="semestral">Assinatura semestral – R$74,90/mês</option>
+            <option value="anual">Assinatura anual – R$69,90/mês</option>
+          </select>
         </div>
       </div>
 
