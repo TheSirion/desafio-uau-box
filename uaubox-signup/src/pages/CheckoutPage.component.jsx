@@ -4,6 +4,7 @@ import Box from "../assets/box.png";
 import Breadcrumb from '../components/Breadcrumb.component';
 import Button from "../components/Button.component";
 import Header from "../components/Header.component";
+import MaskedInput from '../components/MaskedInput.component';
 import { fetchAddress } from '../utils/BrasilApi';
 
 const CheckoutPage = () => {
@@ -36,8 +37,7 @@ const CheckoutPage = () => {
           <form className="form checkout__form d-flex flex-column justify-content-between" onSubmit={handleSubmit}>
             <div className="row form-group d-flex justify-content-center align-items-end">
               <div className="col">
-                <label className="form-label">CEP</label>
-                <input type="text" className="form-control" aria-label="CEP" onChange={handleChange} />
+                <MaskedInput mask="99999-999" />
               </div>
               <div className="col">
                 <Button className="btn btn--secondary">Buscar</Button>

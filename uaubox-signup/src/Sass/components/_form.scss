@@ -1,5 +1,6 @@
 .form {
   color: $secondary-color;
+  height: 100%;
 
   &-control,
   &-select {
@@ -18,7 +19,7 @@
     margin-top: 10rem;
   }
 
-  &--user-data {
-    height: 30rem;
+  &__user-data {
+    height: 100%;
   }
 }
