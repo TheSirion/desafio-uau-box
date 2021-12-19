@@ -1,14 +1,18 @@
 import React from 'react';
-import Circle from "../assets/circle.svg";
+import NumberIcon from "./NumberIcon.component";
 
-const Breadcrumb = () => {
-
-
+const Breadcrumb = ({ active }) => {
   return (
-    <div className='breadcrumb'>
-      <p className="breadcrumb__step"><img src={Circle} alt="step 1" /> Identificação</p>
-      <p className="breadcrumb__step">2 - Dados pessoais</p>
-      <p className="breadcrumb__step">3 - Confirmação</p>
+    <div className="breadcrumb mb-0">
+      <p className={`breadcrumb__step d-flex ${active === 1 ? "breadcrumb__step--active" : ""}`}>
+        <NumberIcon iconNumber={1} />
+        Identificação</p>
+      <p className={`breadcrumb__step d-flex ${active === 2 ? "breadcrumb__step--active" : ""}`}>
+        <NumberIcon iconNumber={2} />
+        Dados pessoais</p>
+      <p className={`breadcrumb__step d-flex ${active === 3 ? "breadcrumb__step--active" : ""}`}>
+        <NumberIcon iconNumber={3} />
+        Confirmação</p>
     </div>
   )
 }

@@ -1,15 +1,12 @@
 .form {
   color: $secondary-color;
 
-  &-group {
-    margin-bottom: 4rem;
-  }
-
   &-control,
   &-select {
     border: 2px solid $secondary-color;
     border-radius: $border-round;
-    padding: 1.45rem 2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
 
   &-label {
@@ -19,5 +16,9 @@
 
   &__buttons {
     margin-top: 10rem;
+  }
+
+  &--user-data {
+    height: 30rem;
   }
 }

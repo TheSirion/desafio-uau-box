@@ -1,0 +1,21 @@
+.number-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .icon-number {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: bold;
+    bottom: 0.5rem;
+    color: $primary-color;
+  }
+}
