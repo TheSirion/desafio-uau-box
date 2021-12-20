@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/desafio-uau-box/static/css/main.fde15881.chunk.css",
+    "main.js": "/desafio-uau-box/static/js/main.d965701d.chunk.js",
+    "main.js.map": "/desafio-uau-box/static/js/main.d965701d.chunk.js.map",
+    "runtime-main.js": "/desafio-uau-box/static/js/runtime-main.26cefd83.js",
+    "runtime-main.js.map": "/desafio-uau-box/static/js/runtime-main.26cefd83.js.map",
+    "static/js/2.df3ff3a5.chunk.js": "/desafio-uau-box/static/js/2.df3ff3a5.chunk.js",
+    "static/js/2.df3ff3a5.chunk.js.map": "/desafio-uau-box/static/js/2.df3ff3a5.chunk.js.map",
+    "static/js/3.88a88cea.chunk.js": "/desafio-uau-box/static/js/3.88a88cea.chunk.js",
+    "static/js/3.88a88cea.chunk.js.map": "/desafio-uau-box/static/js/3.88a88cea.chunk.js.map",
+    "index.html": "/desafio-uau-box/index.html",
+    "static/css/main.fde15881.chunk.css.map": "/desafio-uau-box/static/css/main.fde15881.chunk.css.map",
+    "static/js/2.df3ff3a5.chunk.js.LICENSE.txt": "/desafio-uau-box/static/js/2.df3ff3a5.chunk.js.LICENSE.txt",
+    "static/media/Logo.287159b6.svg": "/desafio-uau-box/static/media/Logo.287159b6.svg",
+    "static/media/box.d9b8b8d2.png": "/desafio-uau-box/static/media/box.d9b8b8d2.png",
+    "static/media/circle.0d9ebebb.svg": "/desafio-uau-box/static/media/circle.0d9ebebb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26cefd83.js",
+    "static/js/2.df3ff3a5.chunk.js",
+    "static/css/main.fde15881.chunk.css",
+    "static/js/main.d965701d.chunk.js"
+  ]
+}
