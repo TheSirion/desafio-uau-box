@@ -41,13 +41,13 @@ const CheckoutPage = () => {
                 <MaskedInput mask="99999-999" onChange={handleChange} />
               </div>
               <div className="col">
-                <Button className="btn btn--secondary">Buscar</Button>
+                <Button className="btn btn--secondary" onSubmit={handleSubmit}>Buscar</Button>
               </div>
             </div>
 
             <div className="row form-group">
               <div className="col">
-                <Input label="Endereço" type="text" minLength={3} maxLength={50} ariaLabel="Endereço" value={fetchedAdress} disabled />
+                <Input label="Endereço" type="text" minLength={3} maxLength={50} aria-label="Endereço" value={fetchedAdress} disabled />
               </div>
             </div>
 
