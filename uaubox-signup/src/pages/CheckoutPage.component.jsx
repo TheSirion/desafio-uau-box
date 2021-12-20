@@ -4,6 +4,7 @@ import Box from "../assets/box.png";
 import Breadcrumb from '../components/Breadcrumb.component';
 import Button from "../components/Button.component";
 import Header from "../components/Header.component";
+import Input from '../components/Input.component';
 import MaskedInput from '../components/MaskedInput.component';
 import { fetchAddress } from '../utils/BrasilApi';
 
@@ -34,10 +35,10 @@ const CheckoutPage = () => {
           <h1 className="h1">Resumo da compra</h1>
         </div>
         <div className="checkout__wrapper">
-          <form className="form checkout__form d-flex flex-column justify-content-between" onSubmit={handleSubmit}>
+          <form className="form checkout__form d-flex flex-column justify-content-between">
             <div className="row form-group d-flex justify-content-center align-items-end">
               <div className="col">
-                <MaskedInput mask="99999-999" />
+                <MaskedInput mask="99999-999" onChange={handleChange} />
               </div>
               <div className="col">
                 <Button className="btn btn--secondary">Buscar</Button>
@@ -46,8 +47,7 @@ const CheckoutPage = () => {
 
             <div className="row form-group">
               <div className="col">
-                <label className="form-label">Endereço</label>
-                <input type="text" className="form-control" aria-label="Endereço" value={fetchedAdress} disabled />
+                <Input label="Endereço" type="text" minLength={3} maxLength={50} ariaLabel="Endereço" value={fetchedAdress} disabled />
               </div>
             </div>
 
@@ -80,7 +80,6 @@ const CheckoutPage = () => {
               </select>
             </div>
           </div>
-
         </div>
 
         <div className="form__buttons">

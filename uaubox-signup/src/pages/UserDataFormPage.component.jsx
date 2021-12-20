@@ -19,10 +19,10 @@ const UserDataFormPage = () => {
         <form className="form form__user-data d-flex flex-column justify-content-around">
           <div className="row g-5 mb-4 form-group">
             <div className="col">
-              <Input label="Nome" inputType="text" minLength={3} maxLength={50} ariaLabel="Nome" />
+              <Input label="Nome" type="text" minLength={3} maxLength={50} aria-label="Nome" />
             </div>
             <div className="col">
-              <Input label="Sobrenome" inputType="text" minLength={3} maxLength={50} ariaLabel="Sobrenome" />
+              <Input label="Sobrenome" type="text" minLength={3} maxLength={50} aria-label="Sobrenome" />
             </div>
           </div>
 
